@@ -9,14 +9,15 @@ let comisiones = 0;
 let totalHorasExtra = 0;
 let nivelDeRiesgo = "";
 
+//Variables para calculos
 const ingresoBaseDeCotizacion = 0.70;
 const subsidioDeTransporte = 249095;
 const salarioMinimo = 1750905;
 const uvt = 52.37;
 
-const salud= 0.04;
-const pension= 0.04;
-const fondoDeSolidaridad = 0.01;
+const saludPorcentaje= 0.04;
+const pensionPorcentaje= 0.04;
+const fondoSolidaridadPorcentaje = 0.01;
 
 const riesgoMinimo= 0.522;
 const riesgoBajo= 1.044;
