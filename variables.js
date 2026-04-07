@@ -25,3 +25,18 @@ const riesgoMedio= 2.436;
 const riesgoAlto= 4.350;
 const riesgoMuyAlto= 6.960;
 
+if (edad < 18) {
+    //No se calcula porque el usuario es menor de edad
+}
+
+else if (edad >= 18 && edad < 25) {
+    //No se calcula porque el usuario es beneficiario por cotizante
+}
+
+else if (edad >= 25 && edad < 60) {
+    //Se calculan las cotizaciones
+}
+
+if (edad >= 60) {
+    //Se calcula el pago de la pensión
+}
