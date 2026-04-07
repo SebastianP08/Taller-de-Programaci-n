@@ -37,6 +37,4 @@ else if (edad >= 25 && edad < 60) {
     //Se calculan las cotizaciones
 }
 
-if (edad >= 60) {
-    //Se calcula el pago de la pensión
-}
+edad >= 60? pension : false;
