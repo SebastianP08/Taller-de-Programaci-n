@@ -10,7 +10,7 @@ let totalHorasExtra = 0;
 let nivelDeRiesgo = "";
 
 //Variables para calculos
-const ingresoBaseDeCotizacion = 0.70;
+const ingresoBaseCotizacion = 0.70;
 const subsidioDeTransporte = 249095;
 const salarioMinimo = 1750905;
 const uvt = 52.37;
@@ -25,6 +25,12 @@ const riesgoMedio= 2.436;
 const riesgoAlto= 4.350;
 const riesgoMuyAlto= 6.960;
 
+let calculoIbc = ingresoBaseCotizacion * (salario + comisiones + totalHorasExtra);
+let calculoSalud = calculoIbc * saludPorcentaje;
+let calculoPension = calculoIbc * pensionPorcentaje;
+
+
+
 if (edad < 18) {
     //No se calcula porque el usuario es menor de edad
 }
@@ -38,3 +44,4 @@ else if (edad >= 25 && edad < 60) {
 }
 
 edad >= 60? pension : false;
+    //Se calcula la pensión porque el usuario es mayor de edad
