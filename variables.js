@@ -25,6 +25,11 @@ const riesgoMedio= 2.436;
 const riesgoAlto= 4.350;
 const riesgoMuyAlto= 6.960;
 
+function calcularPorcentaje (base, porcentaje) {
+    let resultado = base * porcentaje
+    return resultado;
+}
+
 let calculoIbc = ingresoBaseCotizacion * (salario + comisiones + totalHorasExtra);
 let calculoSalud = calculoIbc * saludPorcentaje;
 let calculoPension = calculoIbc * pensionPorcentaje;
@@ -45,3 +50,4 @@ else if (edad >= 25 && edad < 60) {
 
 edad >= 60? pension : false;
     //Se calcula la pensión porque el usuario es mayor de edad
+
