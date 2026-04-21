@@ -9,6 +9,17 @@ let comisiones = 0;
 let totalHorasExtra = 0;
 let nivelDeRiesgo = "";
 
+//Variables para pedir info al usuario
+const mensajeNombreCompleto = "Ingrese su nombre completo";
+const mensajeEdad = "Ingrese su edad";
+const mensajeTd = "Ingrese su tipo de documento";
+const mensajeNumeroDeDocumento = "Ingrese su número de documento";
+const mensajeSalario = "Ingrese su salario";
+const mensajeComisiones = "Ingrese sus comisiones";
+const mensajeTotalHorasExtra = "Ingrese el total de horas extra";
+const mensajeNivelDeRiesgo = "Ingrese su nivel de riesgo";
+
+
 //Variables para calculos
 const ingresoBaseCotizacion = 0.70;
 const subsidioDeTransporte = 249095;
