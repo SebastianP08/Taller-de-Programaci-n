@@ -13,17 +13,20 @@ let nivelDeRiesgo = "";
 const ingresoBaseCotizacion = 0.70;
 const subsidioDeTransporte = 249095;
 const salarioMinimo = 1750905;
+const salarioMinimoIntegralVigente = 22761765;
 const uvt = 52.37;
 
 const saludPorcentaje= 0.04;
 const pensionPorcentaje= 0.04;
 const fondoSolidaridadPorcentaje = 0.01;
 
-const riesgoMinimo= 0.522;
-const riesgoBajo= 1.044;
-const riesgoMedio= 2.436;
-const riesgoAlto= 4.350;
-const riesgoMuyAlto= 6.960;
+const riesgos = [
+    {nombre: "Mínimo", valor: 0.522}, 
+    {nombre: "Bajo", valor: 1.044},    
+    {nombre: "Medio", valor: 2.436}, 
+    {nombre: "Alto", valor: 4.350}, 
+    {nombre: "Muy Alto", valor: 6.960},
+];
 
 function calcularPorcentaje (base, porcentaje) {
     let resultado = base * porcentaje
