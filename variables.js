@@ -9,15 +9,15 @@ let comisiones = 0;
 let totalHorasExtra = 0;
 let nivelDeRiesgo = "";
 
-//Variables para pedir info al usuario
-const mensajeNombreCompleto = "Ingrese su nombre completo";
-const mensajeEdad = "Ingrese su edad";
-const mensajeTd = "Ingrese su tipo de documento";
-const mensajeNumeroDeDocumento = "Ingrese su número de documento";
-const mensajeSalario = "Ingrese su salario";
-const mensajeComisiones = "Ingrese sus comisiones";
-const mensajeTotalHorasExtra = "Ingrese el total de horas extra";
-const mensajeNivelDeRiesgo = "Ingrese su nivel de riesgo";
+//Prompts para pedir info al usuario
+nombreCompleto = prompt ("Ingrese su nombre completo");
+edad = parseInt (prompt ("Ingrese su edad"));
+td = prompt ("Ingrese su tipo de documento");
+numeroDeDocumento = parseInt (prompt ("Ingrese su número de documento"));
+salario = parseInt (prompt ("Ingrese su salario"));
+comisiones = parseInt (prompt ("Ingrese sus comisiones"));
+totalHorasExtra = parseInt (prompt ("Ingrese el total de horas extra"));
+nivelDeRiesgo = prompt ("Ingrese su nivel de riesgo");
 
 
 //Variables para calculos
