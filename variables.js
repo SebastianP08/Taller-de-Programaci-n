@@ -14,9 +14,10 @@ let nivelDeRiesgo = "";
 //Prompts para pedir info al usuario
 nombreCompleto = prompt ("Ingrese su nombre completo");
 edad = parseInt (prompt ("Ingrese su edad"));
+validarUsuario(edad);
 td = prompt ("Ingrese su tipo de documento");
 numeroDeDocumento = parseInt (prompt ("Ingrese su número de documento"));
-salario = parseInt (prompt ("Ingrese su salario"));
+salario = parseFloat (prompt ("Ingrese su salario"));
 comisiones = parseInt (prompt ("Ingrese sus comisiones"));
 totalHorasExtra = parseInt (prompt ("Ingrese el total de horas extra"));
 nivelDeRiesgo = prompt ("Ingrese su nivel de riesgo");
@@ -50,20 +51,20 @@ let calculoIbc = ingresoBaseCotizacion * (salario + comisiones + totalHorasExtra
 let calculoSalud = calculoIbc * saludPorcentaje;
 let calculoPension = calculoIbc * pensionPorcentaje;
 
+function validarUsuario(edadUsuario){
+    console.log("Dentro de la función de Validar Usuario")
+    if (edadUsuario < 18) {
+    alert("No se calcula porque el usuario es menor de edad");
+    }
 
+    else if (edadUsuario >= 18 && edadUsuario < 25) {
+        alert("No se calcula porque el usuario es beneficiario por cotizante");
+    }
 
-if (edad < 18) {
-    //No se calcula porque el usuario es menor de edad
+    else if (edadUsuario >= 25 && edadUsuario < 60) {
+        alert("Se calculan las cotizaciones")
+    }
+
+    edadUsuario >= 60? pension : false;
+        //Se calcula la pensión porque el usuario es mayor de edad
 }
-
-else if (edad >= 18 && edad < 25) {
-    //No se calcula porque el usuario es beneficiario por cotizante
-}
-
-else if (edad >= 25 && edad < 60) {
-    //Se calculan las cotizaciones
-}
-
-edad >= 60? pension : false;
-    //Se calcula la pensión porque el usuario es mayor de edad
-
