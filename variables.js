@@ -1,3 +1,5 @@
+//Sebastian David Aguilar Pulido 1029143082
+
 //Datos que ingresara el usuario
 let nombreCompleto = "";
 let edad = 0;
