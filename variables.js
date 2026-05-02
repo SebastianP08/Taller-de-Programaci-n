@@ -17,7 +17,7 @@ edad = parseInt (prompt ("Ingrese su edad"));
 validarUsuario(edad);
 td = prompt ("Ingrese su tipo de documento");
 numeroDeDocumento = parseInt (prompt ("Ingrese su número de documento"));
-salario = parseFloat (prompt ("Ingrese su salario"));
+salario = parseInt (prompt ("Ingrese su salario"));
 comisiones = parseInt (prompt ("Ingrese sus comisiones"));
 totalHorasExtra = parseInt (prompt ("Ingrese el total de horas extra"));
 nivelDeRiesgo = prompt ("Ingrese su nivel de riesgo");
