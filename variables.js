@@ -4,7 +4,7 @@
 let nombreCompleto = "";
 let edad = 0;
 let td= "";
-let numeroDeDocumento = "";
+let numeroDeDocumento = 0;
 
 let salario = 0;
 let comisiones = 0;
