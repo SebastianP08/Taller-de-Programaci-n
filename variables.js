@@ -1,27 +1,17 @@
 //Sebastian David Aguilar Pulido 1029143082
 
 //Datos que ingresara el usuario
-let nombreCompleto = "";
-let edad = 0;
-let td= "";
-let numeroDeDocumento = 0;
+let nombreCompleto = getdocumentById("nombreCompleto").value;
+let edad = getdocumentById("edad").value;
+let td= getdocumentById("td").value;
+let numeroDeDocumento = getdocumentById("numeroDeDocumento").value;
 
-let salario = 0;
-let comisiones = 0;
-let totalHorasExtra = 0;
-let nivelDeRiesgo = "";
+let salario = getdocumentById("salario").value;
+let comisiones = getdocumentById("comisiones").value;
+let totalHorasExtra = getdocumentById("totalHorasExtra").value;
+let nivelDeRiesgo = getdocumentById("nivelDeRiesgo").value;
 
-//Prompts para pedir info al usuario
-nombreCompleto = prompt ("Ingrese su nombre completo");
-edad = parseInt (prompt ("Ingrese su edad"));
 validarUsuario(edad);
-td = prompt ("Ingrese su tipo de documento");
-numeroDeDocumento = parseInt (prompt ("Ingrese su número de documento"));
-salario = parseInt (prompt ("Ingrese su salario"));
-comisiones = parseInt (prompt ("Ingrese sus comisiones"));
-totalHorasExtra = parseInt (prompt ("Ingrese el total de horas extra"));
-nivelDeRiesgo = prompt ("Ingrese su nivel de riesgo");
-
 
 //Variables para calculos
 const ingresoBaseCotizacion = 0.70;
