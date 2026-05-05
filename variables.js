@@ -1,15 +1,15 @@
 //Sebastian David Aguilar Pulido 1029143082
 
 //Datos que ingresara el usuario
-let nombreCompleto = getdocumentById("nombreCompleto").value;
-let edad = getdocumentById("edad").value;
-let td= getdocumentById("td").value;
-let numeroDeDocumento = getdocumentById("numeroDeDocumento").value;
+let nombreCompleto = getElementById("nombreCompleto").value;
+let edad = getElementById("edad").value;
+let td= getElementById("td").value;
+let numeroDeDocumento = getElementById("numeroDeDocumento").value;
 
-let salario = getdocumentById("salario").value;
-let comisiones = getdocumentById("comisiones").value;
-let totalHorasExtra = getdocumentById("totalHorasExtra").value;
-let nivelDeRiesgo = getdocumentById("nivelDeRiesgo").value;
+let salario = getElementById("salario").value;
+let comisiones = getElementById("comisiones").value;
+let totalHorasExtra = getElementById("totalHorasExtra").value;
+let nivelDeRiesgo = getElementById("nivelDeRiesgo").value;
 
 validarUsuario(edad);
 
