@@ -1,1 +1,124 @@
 /* Sebastian David Aguilar Pulido 1029143082 */
+@import url("https://fonts.googleapis.com/css2?family=Poppins");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    background-color: #f6f5f7;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    overflow: hidden;
+    height: 100vh;
+}
+
+h1 {
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+h1.titulo {
+    font-size: 45px;
+    line-height: 45px;
+    margin: 0;
+    text-shadow: 0 0 10px rgb(16, 64, 74, 0.5);
+}
+
+p, label {
+    font-size: 14px;
+    font-weight: 100;
+    align-self: start;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    margin: 15px 0px 0px;
+
+}
+
+button {
+    position: relative;
+    border-radius: 0.625rem;
+    border: 1px solid #258fcc;
+    background-color: #258fcc;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 10px;
+    padding: 12px 80px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    letter-spacing: 4px;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+button:focus {
+    outline: none;
+}
+
+button.ghost {
+    background-color: transparent;
+    border-color: #ffffff;
+    color:#ffffff;
+}
+
+#resultadoNomina {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 130px;
+    height: 100%;
+    text-align: center;
+}
+
+form {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 150px;
+    height: 100%;
+    text-align: center;
+}
+
+.fila {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;
+  align-self: start;
+}
+
+.campo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+input, select {
+    background-color: #eee;
+    border-radius: 0.625rem;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+}
+
+.contenedor {
+    background-color: #ffffff;
+    border-radius: 25px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
