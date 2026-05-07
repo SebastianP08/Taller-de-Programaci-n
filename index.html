@@ -14,11 +14,21 @@
   
   <script src="variables.js"></script>
  
+  <section class="resultado">
+    <div id="resultadoNomina">
+      <h1>Resultado de nómina</h1>
+      <p id="salarioFinal"></p>
+      <p id="ibc"></p>
+      <p id="deducciones"></p>
+      <p id="total"></p>
+    </div>
+  </section>
+
   <section class="formulario">
     <div class="formulario-contenido">
 
      <form action="#" method="post">
-       <h1 class="titulo">Calculo de Nómina</h1>
+       <h1>Calculo de Nómina</h1>
        <label for="nombreCompleto">Nombre Completo:</label>
        <input type="text" id="nombreCompleto" name="nombre" minlength="8" maxlength="260" required>
 
@@ -62,12 +72,27 @@
          <option value="alto">4.350 (Alto)</option>
          <option value="muyAlto">6.960 (Muy Alto)</option>
        </select>
-
-       <button type="submit">Calcular</button>
      </form>
     </div>
   </section>
      
+  <section class="Mensajes">
+    <div class="overlay-container">
+      <div class="overlay">
+        <div class="overlay-panel overlay-left">
+          <h1 class="titulo">Bienvenido al sistema de nómina</h1>
+          <p>Ingresa tus datos para calcular tu nómina.</p>
+          <button type="submit" class="ghost" id="calcular">Calcular nómina</button>
+        </div>
+
+        <div class="overlay-panel overlay-right">
+          <h1 class="titulo">Cálculo de nómina listo</h1>
+          <p>Los datos han sido procesados correctamente. Puedes revisar el resultado o realizar un nuevo cálculo.</p>
+          <button type="submit" class="ghost" id="recalcular">Recalcular nómina</button>
+        </div>
+      </div>
+    </div>
+  </section>
 
 </body>
 </html>
