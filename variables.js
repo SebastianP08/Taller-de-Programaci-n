@@ -1,17 +1,33 @@
 //Sebastian David Aguilar Pulido 1029143082
 
 //Datos que ingresara el usuario
-let nombreCompleto = getElementById("nombreCompleto").value;
-let edad = getElementById("edad").value;
-let td= getElementById("td").value;
-let numeroDeDocumento = getElementById("numeroDeDocumento").value;
+let nombreCompleto = document.getElementById("nombreCompleto").value;
+let edad = document.getElementById("edad").value;
+let td= document.getElementById("td").value;
+let numeroDeDocumento = document.getElementById("numeroDeDocumento").value;
 
-let salario = getElementById("salario").value;
-let comisiones = getElementById("comisiones").value;
-let totalHorasExtra = getElementById("totalHorasExtra").value;
-let nivelDeRiesgo = getElementById("nivelDeRiesgo").value;
+let salario = document.getElementById("salario").value;
+let comisiones = document.getElementById("comisiones").value;
+let totalHorasExtra = document.getElementById("totalHorasExtra").value;
+let nivelDeRiesgo = document.getElementById("nivelDeRiesgo").value;
 
 validarUsuario(edad);
+
+//Variables para animación de gif
+document.addEventListener("DOMContentLoaded", () => {
+  const calcularBoton = document.getElementById("calcular");
+  const recalcularBoton = document.getElementById("recalcular");
+  const contenedor = document.getElementById("contenedor");
+
+  calcularBoton.addEventListener("click", () => {
+    contenedor.classList.add("right-panel-active");
+  });
+
+  recalcularBoton.addEventListener("click", () => {
+    contenedor.classList.remove("right-panel-active");
+  });
+
+});
 
 //Variables para calculos
 const ingresoBaseCotizacion = 0.70;
@@ -44,15 +60,15 @@ let calculoPension = calculoIbc * pensionPorcentaje;
 function validarUsuario(edadUsuario){
     console.log("Dentro de la función de Validar Usuario")
     if (edadUsuario < 18) {
-    alert("No se calcula porque el usuario es menor de edad");
+    
     }
 
     else if (edadUsuario >= 18 && edadUsuario < 25) {
-        alert("No se calcula porque el usuario es beneficiario por cotizante");
+        
     }
 
     else if (edadUsuario >= 25 && edadUsuario < 60) {
-        alert("Se calculan las cotizaciones")
+        
     }
 
     edadUsuario >= 60? pension : false;
