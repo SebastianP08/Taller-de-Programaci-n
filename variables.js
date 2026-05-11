@@ -3,7 +3,7 @@
 document.addEventListener("DOMContentLoaded", () => {
 
   //Variables para animación de gif
-  const calcularBoton = document.getElementById("calcular");
+  const formulario = document.getElementById("formularioNomina");
   const recalcularBoton = document.getElementById("recalcular");
   const contenedor = document.getElementById("contenedor");
 
@@ -33,7 +33,8 @@ document.addEventListener("DOMContentLoaded", () => {
       {nombre: "Muy Alto", valor: 6.960},
   ];
 
-  calcularBoton.addEventListener("click", () => {
+  formulario.addEventListener("submit", (e) => {
+    e.preventDefault();
 
     //Datos que ingresara el usuario
     let nombreCompleto = document.getElementById("nombreCompleto").value;
