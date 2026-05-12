@@ -33,22 +33,48 @@ document.addEventListener("DOMContentLoaded", () => {
       {nombre: "Muy Alto", valor: 6.960},
   ];
 
+
+  let fechaNacimiento = document.getElementById("fechaNacimiento");
+  let edad = document.getElementById("edad");
+
+    function calcularEdad(fecha) {
+
+        let hoy = new Date();
+        let cumpleanos = new Date(fecha);
+        let edad = hoy.getFullYear() - cumpleanos.getFullYear();
+        let mes = hoy.getMonth() - cumpleanos.getMonth();
+
+        if (
+            mes < 0 ||
+            (mes === 0 && hoy.getDate() < cumpleanos.getDate())
+        ) {
+            edad--;
+        }
+
+        return edad;
+    }
+
+fechaNacimiento.addEventListener("change", () => {
+
+    edad.textContent =
+    calcularEdad(fechaNacimiento.value);
+
+});
+  
+
   formulario.addEventListener("submit", (e) => {
     e.preventDefault();
 
     //Datos que ingresara el usuario
     let nombreCompleto = document.getElementById("nombreCompleto").value;
-    let edad = document.getElementById("edad").value;
     let td= document.getElementById("td").value;
     let numeroDeDocumento = document.getElementById("numeroDeDocumento").value;
-
     let salario = document.getElementById("salario").value;
     let comisiones = document.getElementById("comisiones").value;
     let totalHorasExtra = document.getElementById("totalHorasExtra").value;
     let nivelDeRiesgo = document.getElementById("nivelDeRiesgo").value;
 
     contenedor.classList.add("right-panel-active");
-  
 
     function calcularPorcentaje (base, porcentaje) {
         let resultado = base * porcentaje
